@@ -1,0 +1,285 @@
+*{
+	font-family:'Rasputin';
+}
+
+html,body
+{
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+.navigation, header{
+	animation:fadeIn 1.5s ease-in-out;
+	animation-fill-mode: forwards;
+	opacity:0;
+}
+
+@font-face{
+	font-family: 'Rasputin';
+	src: url('assets/Rasputin.otf') format('otf');
+}
+
+.navigation{
+	display:flex;
+	justify-content:center;
+}
+
+@keyframes fadeIn{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+body{
+	background-color:#6997be;
+}
+
+/*--------------------header styling----------------------*/
+header{
+	margin-top:23vh;
+}
+.navbar-brand:hover{
+	color:white;
+}
+.introduction, .text{
+	display:flex;
+	justify-content:center;
+}
+.logo a{
+	color:white;
+}
+.logo img{
+	max-width:50px;
+	max-height:50px;
+}
+header h3{
+	margin-bottom:2vh;
+}
+header .btn{
+	margin-top:2vh;
+	border: solid white 1px;
+	border-radius:10px;
+	color:white;
+}
+.button{
+	display:flex;
+	justify-content:center;
+}
+.btn:hover{
+	background-color:white;
+	color:#4c89bc;
+}
+h2{
+	padding-bottom:10px;
+}
+
+
+/*--------------------end of header styling-----------------------*/
+
+/*--------------------services styling--------------------*/
+.services{
+	color:white;
+}
+
+.title{
+	display:flex;
+	justify-content:center;
+	color:#4c89bc;
+}
+.serv{
+	display:flex;
+	justify-content:center;
+	background-color:#6997be;
+	padding:50px;
+}
+.col-md-4 .s{
+	border:1px solid white;
+}
+
+/*-------------------end of services styling------------------*/
+
+/*-------------------info styling-------------------*/
+
+.information{
+	background-color:#5388b4;
+	color:white;
+	margin-top:5vh;
+	margin-bottom:10vh;
+	padding-bottom:5vh;
+}
+.title2, .about{
+	display:flex;
+	justify-content:center;
+}
+.about{
+	margin-bottom:5vh;
+}
+.title3{
+	display:flex;
+	justify-content:center;
+	padding-bottom:2vh;
+}
+
+/*----------------------end of info styling--------------------*/
+
+
+/*----------------------carousel styling----------------------*/
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 33.33%;
+  padding: 0 10px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.prev-button, .next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+
+/*----------------------end of carousel styling----------------------*/
+
+
+/*----------------------footer styling--------------------------*/
+footer{
+	background-color:#5388b4;
+	display:flex;
+	justify-content:center;
+	font-size:10px;
+	color:white;
+}
+.f{
+	width:40px;
+	height:40px;
+}
+.links{
+	display:flex;
+	flex-direction:column;
+}
+a{
+	text-decoration:none;
+	color:white;
+}
+
+/*----------------------end of footer styling--------------------------*/
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+	.bg{
+		background-image:url('assets/backsm.jpg');
+		background-size:cover;
+		padding-bottom:50vh;
+		color:white;
+		background-position:center center;
+	}
+
+	.introduction,.text{
+		text-align:center;
+		padding: 0 5px 0 5px;
+	}
+	.pic{
+		order:2;
+	}
+	footer{
+		text-align:center;
+	}
+	.information{
+		text-align:center;
+		font-size:0.9em;
+	}
+	.links{
+		margin-bottom:2vh;
+	}
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+	.information{
+		font-size:0.8em;
+	}
+	.services{
+		font-size:0.7em;
+	}
+	.bg{
+		background-image:url('assets/backsm.jpg');
+		background-size:cover;
+		padding-bottom:50vh;
+		color:white;
+	}
+	.pic{
+		order:2;
+	}
+	h2{
+		text-align:center;
+	}
+	h6{
+		padding-top:10px;
+	}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+	.bg{
+		background-image:url('assets/backlarge.jpg');
+		background-size:cover;
+		padding-bottom:50vh;
+		color:white;
+	}
+	h6{
+		padding-top:10px;
+	}
+
+
+}
+@media screen and (min-width: 993px) {
+	.bg{
+		background-image:url('assets/backxl.jpg');
+		background-size:cover;
+		padding-bottom:50vh;
+		color:white;
+	}
+	h6{
+		padding-top:10px;
+	}
+
+}
+
+

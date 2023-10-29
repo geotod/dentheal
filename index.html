@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+    	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>DentHeal</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="home_style.css">
+		<link rel="shortcut icon" href="assets/tab_logo.png" type="image/x-icon">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="bg" id="top-section">
+			<div class="navigation">
+			<nav id="navBar" class="navbar navbar-expand">
+				<div class="logo">
+					<a href="home.html" class="navbar-brand">
+					<span><img src="assets/logo.png"></span>
+					DentHeal
+					</a>
+				</div>
+			</nav>
+			</div>
+			<header>
+				<div class="introduction">
+					<h2>Welcome to DentHeal - Your Smile's Best Friend.</h3>
+				</div>
+				<div class="text">
+					<p class="h5">Discover the art of dental care and unlock your perfect smile.<br>
+					Click below to explore our comprehensive range of services.<br></p>
+				</div>
+				<div class="button">
+					<button class="btn btn-md">Our Services</button>
+				</div>
+			</header>
+		</div>
+		<main>
+			<div class="services" id="services-section">
+				<div class="serv row">
+					<div class="pic col-md-4">
+						<img src="assets/cosmetic.jpg" class="s img-fluid">
+					</div>
+					<div class="col-md-8">
+						<h4><b>Cosmetic Dentistry</b></h4>
+						<p>Achieve the smile you've always dreamed of with out cosmetic dentistry services.<br>
+						From teeth whitening to porcelain veneers to dental implants and smile makeovers,<br>
+						we offer a wide range of options to enhance your smile's appearance.</p>
+					</div>
+				</div>
+				<div class="serv row">
+					<div class="col-md-8">
+						<h4><b>Restorative Dentistry</b></h4>
+						<p>Our restorative dental treatments are designed to repair and restore damaged or missing<br>
+						 teeth. Whether you need dental fillings, crowns, bridges, or dentures, our team will help you<br>
+						 regain your smile's functionality and aesthetics.</p>
+					</div>
+					<div class="pic col-md-4">
+						<img src="assets/restorative.jpg" class="s img-fluid">
+					</div>
+				</div>
+				<div class="serv row">
+					<div class="pic col-md-4">
+						<img src="assets/orthodontics.jpg" class="s img-fluid">
+					</div>
+					<div class="col-md-8">
+						<h4><b>Orthodontics</b></h4>
+						<p>Straighten your teeth and improve your bite with our orthodontic solutions. We offer<br>
+						 traditional braces, Invisalign®, and other cutting-edge orthodontic treatments to align your<br>
+						 teeth discreetly and comfortably.</p>
+					</div>
+				</div>
+				<div class="serv row">
+					<div class="col-md-8">
+						<h4><b>Oral Surgery</b></h4>
+						<p>For more complex dental issues, our oral surgeons are here to provide expert care. Services<br>
+						 include tooth extractions, wisdom teeth removal, and dental implant placement.</p>
+					</div>
+					<div class="pic col-md-4">
+						<img src="assets/surgery.jpg" class="s img-fluid">
+					</div>
+				</div>
+			</div>
+			<div class="information" id="about-section">
+				<div class="title2">
+					<h2>About Us</h2>
+				</div>
+				<div class="about">
+					<p>At DentHeal, our commitment to excellence in dentistry is backed by a rich history of<br>
+				 	experience and a long list of achievements. Since our establishment in 2013, we have been at<br>
+				 	the forefront of dental care, setting industry standards and earning recognition for our<br>
+				 	dedication to patient well-being and dental innovation.</p>
+				</div>
+				<div class="title3">
+					<h3>Meet our team!</h3>
+				</div>
+				<div class="carousel-container">
+  					<div class="carousel">
+    						<div class="slide">
+      							<img src="assets/dentist1.jpg" class="img-fluid" alt="Image 1">
+    						</div>
+    						<div class="slide">
+      							<img src="assets/dentist2.jpg" class="img-fluid" alt="Image 2">
+    						</div>
+						<div class="slide">
+      							<img src="assets/dentist3.jpg" class="img-fluid" alt="Image 3">
+    						</div>
+						<div class="slide">
+      							<img src="assets/dentist4.jpg" class="img-fluid" alt="Image 4">
+    						</div>
+						<div class="slide">
+      							<img src="assets/dentist5.jfif" class="img-fluid" alt="Image 5">
+    						</div>
+						<div class="slide">
+      							<img src="assets/dentist6.jfif" class="img-fluid" alt="Image 6">
+    						</div>
+  					</div>
+  					<button class="prev-button">&#9664;</button>
+  					<button class="next-button">&#9654;</button>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="row">
+				<div class="col-sm-4">
+					<p><span><img src="assets/logo.png" class="f img-fluid"></span>DentHeal</p>
+					<p>Smiles are our specialty, and yours is our masterpiece.</p>
+				</div>
+				<div class="col-sm-4">
+					<h6>Quick Links</h6>
+					<div class="links">
+						<a href="#top-section">Home</a>
+						<a href="#services-section">Services</a>
+						<a href="#about-section">About us</a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<h6>Contact</h6>
+					<p>+30 1234567890</p>
+					<p>dentheal@denstistry.dent</p>
+					<p>Athens, Greece</p>
+					<p>Made by George Tod</p>
+				</div>
+			</div>
+		</footer>
+	<script>
+		const carousel = document.querySelector('.carousel');
+		const slides = document.querySelectorAll('.slide');
+		const prevButton = document.querySelector('.prev-button');
+		const nextButton = document.querySelector('.next-button');
+		let currentSlideIndex = 0;
+
+		nextButton.addEventListener('click', () => {
+  			if (currentSlideIndex < slides.length - 3) {
+    				currentSlideIndex++;
+    				updateCarousel();
+  			}
+		});
+
+		prevButton.addEventListener('click', () => {
+  			if (currentSlideIndex > 0) {
+    				currentSlideIndex--;
+    				updateCarousel();
+  			}
+		});
+
+		function updateCarousel() {
+  			const translateX = -currentSlideIndex * 33.33;
+  			carousel.style.transform = `translateX(${translateX}%)`;
+		}
+		const servicesButton = document.querySelector('.btn');
+  		const servicesSection = document.getElementById('services-section');
+
+  			servicesButton.addEventListener('click', () => {
+    				servicesSection.scrollIntoView({ behavior: 'smooth' });
+  			});
+		const homeLink = document.querySelector('a[href="#top-section"]');
+  		const servicesLink = document.querySelector('a[href="#services-section"]');
+  		const aboutLink = document.querySelector('a[href="#about-section"]');
+  		homeLink.addEventListener('click', (event) => {
+    			event.preventDefault();
+    			document.getElementById('top-section').scrollIntoView({ behavior: 'smooth' });
+  		});
+
+  		servicesLink.addEventListener('click', (event) => {
+    			event.preventDefault();
+    			document.getElementById('services-section').scrollIntoView({ behavior: 'smooth' });
+  		});
+
+  		aboutLink.addEventListener('click', (event) => {
+    			event.preventDefault();
+    			document.getElementById('about-section').scrollIntoView({ behavior: 'smooth' });
+  		});
+	</script>
+	</body>
+</html>
